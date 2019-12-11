@@ -15,17 +15,25 @@ int main(){
 	M.push_back(v3);
 	M.push_back(v4);
 
-	FindInPartillySortedMatrix_03 objF;
+	FindInPartillySortedMatrix_03 obj_03;
 	int target = 100;
 
-	if (objF.Find(target, M)){
+	/*
+	if (obj_03.Find(target, M)){
 		cout << "找到了元素:" << target << endl;
 	}
 	else{
 		cout << "没有找到元素:" << target << endl;
 	}
+	*/
 
+	//调用ReplaceBlank()
+	char* str = "We are happy.";		//13
+	ReplaceBlank_04 obj_04;
+	
+	obj_04.replaceSpace(str, strlen(str));
 
+	cout << str << endl;
 
 	system("pause");
 	return 0;
