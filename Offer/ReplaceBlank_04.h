@@ -3,8 +3,6 @@
 class ReplaceBlank_04
 {
 public:
-	ReplaceBlank_04();
-	~ReplaceBlank_04();
 
 	string ReplaceBlank(string str);
 

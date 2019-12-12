@@ -1,15 +1,5 @@
 #include "FindInPartillySortedMatrix_03.h"
 
-
-FindInPartillySortedMatrix_03::FindInPartillySortedMatrix_03()
-{
-}
-
-
-FindInPartillySortedMatrix_03::~FindInPartillySortedMatrix_03()
-{
-}
-
 /* --------------------------------------------------------------------
 *  函数原型 :  void Find()
 *  说    明 :  在一个排序好的二维数组中查找目标数

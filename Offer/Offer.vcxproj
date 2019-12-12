@@ -57,6 +57,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <StackReserveSize>1000000</StackReserveSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -80,11 +81,13 @@
   <ItemGroup>
     <ClInclude Include="FindInPartillySortedMatrix_03.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="PrintListReverse_05.h" />
     <ClInclude Include="ReplaceBlank_04.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FindInPartillySortedMatrix_03.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PrintListReverse_05.cpp" />
     <ClCompile Include="ReplaceBlank_04.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
