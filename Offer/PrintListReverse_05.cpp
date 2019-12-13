@@ -1,7 +1,12 @@
 #include "PrintListReverse_05.h"
 
-ListNode* PrintListReverse_05::createListWithHead(ListNode* head, int* p, int len){
-	//ListNode *head = (ListNode*)malloc(sizeof(ListNode));
+
+
+//-------------------------单链表-----------------------
+
+ListNode* PrintListReverse_05::createList(int* p, int len){
+
+	ListNode *head = (ListNode*)malloc(sizeof(ListNode));
 	//ListNode *head = NULL;  这样写报错，临时变量随着函数结束消失
 	ListNode* pTemp = head;
 	//while (*p != '\0')  int[]不能使用这个语句判断数组结束，char[]类型的可以
@@ -13,17 +18,45 @@ ListNode* PrintListReverse_05::createListWithHead(ListNode* head, int* p, int le
 		pTemp->pNext = node;
 		pTemp = node;
 	}
+	head = head->pNext;
 	return head;
 }
 
-//链表中插入值
+//单链表中在第position位置的后面插入节点
+ListNode* PrintListReverse_05::insertNode(ListNode* head, int position, int data){
+
+	ListNode* newNode = (ListNode*)malloc(sizeof(ListNode));
+	newNode->m_data = data;
+	newNode->pNext = NULL;
+	ListNode* tmp = head;
+	int count=0;
+	//插入的元素当做第一个元素
+	if (position == 1){
+		newNode->pNext = head;
+		head = newNode;
+	}
+	while (tmp){
+		count++;
+
+		if (count == position){
+
+		}
+		tmp = tmp->pNext;
+	}
+	return head;
+}
+
+//删除链表节点
+
+
+//单链表的排序
 
 //顺时打印
 void PrintListReverse_05::PrintList(ListNode* head){
 	ListNode* pTmp = head;
-	while (pTmp->pNext){
-		pTmp = pTmp->pNext;
+	while (pTmp){
 		cout << pTmp->m_data << " ";
+		pTmp = pTmp->pNext;
 	}
 }
 

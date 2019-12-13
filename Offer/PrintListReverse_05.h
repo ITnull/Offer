@@ -15,9 +15,9 @@ struct ListDNode{
 class PrintListReverse_05
 {
 public:
-	ListNode* createListWithHead(ListNode* head, int* p, int len);
-
+	ListNode* createList(int* p, int len);
 	void PrintList(ListNode* head);
 	void PrintListRever(ListNode* head);
+	ListNode* insertNode(ListNode* head, int position, int data);
 };
 

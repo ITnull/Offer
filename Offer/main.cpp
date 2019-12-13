@@ -37,16 +37,27 @@ int main(){
 
 
 	//调用PrintListRever()
-	/*
-	int a[] = { 1, 2, 3 };
+	
+	int a[] = { 1, 2, 3, 4, 5 };
 	int len = sizeof(a) / sizeof(a[0]);
-	ListNode* head = (ListNode*)malloc(sizeof(ListNode));
+	//ListNode* head = (ListNode*)malloc(sizeof(ListNode));
 	PrintListReverse_05 obj_05;
-	obj_05.createListWithHead(head, a, len);
+
+	//创建单链表
+	ListNode* head = obj_05.createList(a, len);
 	obj_05.PrintList(head);
 	cout << endl;
 	obj_05.PrintListRever(head);
-	*/
+	cout << endl;
+
+	//单链表中插入元素
+	ListNode* newHead = obj_05.insertNode(head, 1, 10);
+	obj_05.PrintList(newHead);
+	cout << endl;
+	obj_05.PrintListRever(newHead);
+	cout << endl;
+
+	//
 
 	system("pause");
 	return 0;
